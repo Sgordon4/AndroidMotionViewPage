@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/drag_motion_scene">
+
+    <FrameLayout
+        android:id="@+id/view_a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/media"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:text="TOP BLUE"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="BOTTOM BLUE"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/view_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/red"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:background="@android:color/holo_red_light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:text="TOP RED"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="BOTTOM RED"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/thresholdOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:clickable="false"
+        android:focusable="false">
+
+        <View
+            android:id="@+id/thresholdOpen"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="top"
+            android:background="@android:color/white"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/thresholdChange"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="top"
+            android:background="@android:color/white"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
