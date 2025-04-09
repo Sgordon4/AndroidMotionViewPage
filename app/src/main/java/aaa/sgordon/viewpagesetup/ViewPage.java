@@ -61,6 +61,9 @@ public class ViewPage extends Fragment {
 			public boolean onPreDraw() {
 				motionLayout.getViewTreeObserver().removeOnPreDrawListener(this);
 
+				dragHelper.onViewCreated();
+
+				//TODO This should be done after the media/video/etc is fully loaded
 				ImageView media = view.findViewById(R.id.media);
 				float mediaHeight = dragHelper.getMediaHeight(media);
 				dragHelper.onMediaReady(mediaHeight);

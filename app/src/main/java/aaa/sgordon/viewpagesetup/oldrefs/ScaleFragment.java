@@ -1,4 +1,4 @@
-package aaa.sgordon.viewpagesetup;
+package aaa.sgordon.viewpagesetup.oldrefs;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

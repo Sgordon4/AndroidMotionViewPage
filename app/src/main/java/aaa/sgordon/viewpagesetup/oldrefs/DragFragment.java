@@ -1,4 +1,4 @@
-package aaa.sgordon.viewpagesetup;
+package aaa.sgordon.viewpagesetup.oldrefs;
 
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
@@ -22,6 +22,7 @@ import androidx.constraintlayout.motion.widget.MotionLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 
+import aaa.sgordon.viewpagesetup.R;
 import aaa.sgordon.viewpagesetup.databinding.FragmentDragBinding;
 
 public class DragFragment extends Fragment {

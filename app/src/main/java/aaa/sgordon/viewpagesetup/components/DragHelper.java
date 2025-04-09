@@ -83,6 +83,11 @@ public class DragHelper {
 		return Math.toIntExact(Math.round(scale * height));
 	}
 
+
+	public void onViewCreated() {
+		onMediaReady(motionLayout.getHeight());
+	}
+
 	public void onMediaReady(float mediaHeight) {
 		float screenHeight = motionLayout.getHeight();
 
